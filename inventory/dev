@@ -1,12 +1,13 @@
 [nfs]
-172.31.22.235 ansible_ssh_user='ec2-user'
+172.31.22.235 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/.ssh/key.pem
+
 
 [webservers]
-172.31.28.240 ansible_ssh_user='ec2-user'
-172.31.23.218 ansible_ssh_user='ec2-user'
+172.31.28.240 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/.ssh/key.pem
+172.31.20.170 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/.ssh/key.pem
 
 [db]
-172.31.32.212 ansible_ssh_user='ec2-user' 
+172.31.32.212 ansible_ssh_user='ubuntu' ansible_ssh_private_key_file=/home/ubuntu/.ssh/key.pem
 
 [lb]
-172.31.31.213 ansible_ssh_user='ubuntu'
+172.31.30.233 ansible_ssh_user='ubuntu' ansible_ssh_private_key_file=/home/ubuntu/.ssh/key.pem
