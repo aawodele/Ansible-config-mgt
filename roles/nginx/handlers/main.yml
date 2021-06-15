@@ -1,0 +1,12 @@
+---
+# handlers file for loadbalancer---
+- name: Restart nginx
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
+
+
+- name: Restart firewalld
+  ansible.builtin.service:
+    name: firewalld
+    state: restarted
