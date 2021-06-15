@@ -1,0 +1,10 @@
+---
+# defaults file for loadbalancer
+enable_nginx_lb: false
+load_balancer_is_required: false
+
+lb_name: "backend"
+lb_target: ["172.31.25.100", "172.31.24.172"]
+
+host_1: web1
+host_2: web2
